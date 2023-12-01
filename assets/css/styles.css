@@ -1,0 +1,336 @@
+/* home.css */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #2196f3, #e91e63);
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* header css  */
+.navbar {
+  background-color: #3498db; /* Blue navbar */
+  border-bottom: 2px solid #2980b9; /* Darker blue border */
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: #ecf0f1; /* Lighter color on hover */
+}
+
+.dropdown-menu {
+  animation: fadeIn 0.5s ease; /* Fade-in animation to the dropdown */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.blog-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-content {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.read-more {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  color: #e91e63;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #fff;
+  background-color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+  background-color: #555;
+}
+/* Styles for Recent Blogs Section */
+#recent-blogs {
+  text-align: center;
+}
+
+.recent-blog-card {
+  animation: fadeInUp 0.75s ease;
+}
+
+/* Styles for Client Feedback Section */
+#client-feedback {
+  text-align: center;
+}
+
+/* Styles for Brands Section */
+#brands {
+  text-align: center;
+}
+
+.brand-logo {
+  animation: fadeInLeft 0.75s ease;
+}
+
+.brand-logo:nth-child(even) {
+  animation: fadeInRight 0.75s ease;
+}
+
+/* contact page css */
+
+#contact-info {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-heading {
+  font-family: "Arial", sans-serif;
+  font-size: 36px;
+  color: #ffffff; /* Text color */
+  background-color: #ff0000; /* Background color */
+  padding: 20px;
+  border: 2px solid #ffffff; /* Border color */
+  border-radius: 10px;
+}
+
+.contact-card {
+  background-color: #f8f9fa; /* Card background color */
+  border: 1px solid #dee2e6; /* Card border color */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-card i {
+  color: #007bff; /* Icon color */
+}
+#contact-info h2 {
+  font-family: "Roboto", sans-serif; /* Add your preferred font family */
+  font-size: 2.5rem;
+  color: #333; /* Add your preferred text color */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none; /* Remove the default card border */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+.card i {
+  color: #007bff; /* Add your preferred icon color */
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #007bff; /* Add your preferred heading color */
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555; /* Add your preferred text color */
+}
+#contact-form {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif; /* Add your preferred font family */
+  color: #333; /* Add your preferred text color */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-secondary,
+.btn-primary {
+  background-color: #007bff; /* Add your preferred button background color */
+  border-color: #007bff; /* Add your preferred button border color */
+  color: #fff; /* Add your preferred button text color */
+}
+
+.btn-secondary:hover,
+.btn-primary:hover {
+  background-color: #0056b3; /* Add your preferred hover background color */
+  border-color: #0056b3; /* Add your preferred hover border color */
+  color: #fff; /* Add your preferred hover text color */
+}
+/* about page css */
+
+.about-us-page {
+  padding: 40px 0;
+}
+
+.hero-section,
+.story-section,
+.team-section,
+.mission-vision-section,
+.mission-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1,
+.story-section h2,
+.team-section h2,
+.mission-vision-section h2,
+.mission-section h2 {
+  color: #ff0000;
+}
+
+.hero-section p,
+.story-section p,
+.team-section p,
+.mission-vision-section p,
+.mission-section p {
+  color: #000000;
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* blog page css */
+
+.blog-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.blog-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-content {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.read-more {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  color: #e91e63;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #fff;
+  background-color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+  background-color: #555;
+}
